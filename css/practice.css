@@ -56,3 +56,11 @@ h3 {
   font-family: "Noto Sans KR";
   padding-left: 20px;
 }
+
+
+.navbar li , .navbar a{
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+}
+
