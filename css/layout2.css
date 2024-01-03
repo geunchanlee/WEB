@@ -1,0 +1,49 @@
+.main-background {
+  width: 100%;
+  height: 800px;
+  background-image: url("../img/leaf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1px;
+  text-align: center;
+  position: relative;
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.comment {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto Mono";
+}
+
+.main-button {
+  padding: 15px;
+  font-size: 20px;
+  color: darkgreen;
+  background: darkseagreen;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 500px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+}
+
+.main-text {
+  background: darkseagreen;
+  width: 600px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+
+  position: relative;
+  top: -120px;
+}

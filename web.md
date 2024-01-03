@@ -105,11 +105,11 @@ section, footer등도 같다.
 
 클래스 중복되는것들 전부 하나하나 다 주려면 복잡하고 귀찮다
 
-.navbar>li: 바로 아래 있는 li만 선택
+.navbar>li: navbar 클래스 바로 아래 있는 li 포함
 
 .navbar li: 모든 자식 li들 다 선택해서 적용
 
-href="#" 주면 아직 정하지 않은것에 링크 주기
+href="#" 주면 임시 링크 부여
 
 <a> 태그에서 text-decoration: none; 주면 링크 밑줄 제거 가능
 
@@ -118,4 +118,18 @@ href="#" 주면 아직 정하지 않은것에 링크 주기
 예시) <ul class="navbar content">
 
 
-a
+### button
+
+border: none
+
+position: relative; = 내 원래 위치를 기준으로 이동
+
+static = 좌표이동 X
+
+fixed = 현재 화면 기준 (상단 고정 메뉴나 우측 하단 사이트 이동 버튼 만들 수 있다)
+
+absolute = 내 부모 태그를 기준으로 좌표이동 (부모 중 포지션 relative 가진 태그를 기준)
+
+absolute 에서 좌우 정렬하기 left:0; right:0; margin: auto; width:100px; 같이 속성 부여
+
+포지션을 부여하면 공중에 뜸
