@@ -35,15 +35,23 @@
   right: 0;
   margin: auto;
   width: 100px;
+  z-index: 5;
 }
 
 .main-text {
-  background: darkseagreen;
-  width: 600px;
+  background: wheat;
+  width: 70%;
+  max-width: 700px;
   padding: 20px;
   margin: auto;
   text-align: center;
-
   position: relative;
-  top: -120px;
+  top: -420px;
+  z-index: 4;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 20px;
 }

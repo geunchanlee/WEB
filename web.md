@@ -130,6 +130,32 @@ fixed = 현재 화면 기준 (상단 고정 메뉴나 우측 하단 사이트 �
 
 absolute = 내 부모 태그를 기준으로 좌표이동 (부모 중 포지션 relative 가진 태그를 기준)
 
-absolute 에서 좌우 정렬하기 left:0; right:0; margin: auto; width:100px; 같이 속성 부여
+absolute 에서 좌우 정렬하기 left:0; right:0; margin: auto; width:xx px; 같이 속성 부여
 
 포지션을 부여하면 공중에 뜸
+
+### z-index
+
+포지션 속성을 부여하면 요소들이 공중에 뜨게 되는데 어떤 것이 앞으로 올 것인가?
+
+z-index 가 높을수록 앞으로 온다
+
+### max-width
+
+퍼센트 기호로 width를 설정하면 작은 모바일 레이아웃에서도 적당한 크기를 갖는 반응형 웹을 만들 수 있다
+
+하지만 pc 에서 큰 화면에서는 %로 설정된 값에 맞추면 너무 요소가 커질 수 있어 최대 크기를 설정할 수 있다.
+
+width 는 실제 박스 내부의 content 영역의 너비기 때문에 패딩, 보더 등을 주면 생각한 크기가 아닐 수 있다.
+
+박스 사이즈를 콘텐트 영역이 아니라 패딩 보더를 전부 포함한 영역을 width 로 설정할 수 있는데
+
+box-sizing: border-box; 로 설정 가능
+
+### normalize
+
+브라우저 호환성을 위해 설정
+
+### form & input
+
+<form> 태그 이용 </form>

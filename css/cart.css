@@ -1,0 +1,89 @@
+table {
+  border-collapse: collapse;
+  background: white;
+  width: 100%;
+  max-width: 1200px;
+  border: none;
+  border-radius: 10px;
+}
+th,
+td {
+  padding: 8px;
+}
+
+body {
+  margin: 0;
+}
+
+.main-cart {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+.title {
+  font-family: "montserrat", serif;
+  margin-top: 50px;
+  font-weight: normal;
+  font-size: 24px;
+
+  color: #0a4a9b;
+}
+
+thead {
+  font-family: "nunito", serif;
+  font-weight: bold;
+  color: grey;
+}
+tr {
+  border-bottom: 1px solid lightgray;
+}
+
+.pic {
+  width: 15%;
+}
+.item {
+  width: 35%;
+}
+.amount {
+  width: 10%;
+}
+.price {
+  width: 20%;
+  text-align: right;
+}
+
+.prod-item {
+  font-family: "nunito", serif;
+  font-weight: bold;
+  color: grey;
+}
+.prod-num {
+  text-align: right;
+  font-family: "montserrat", serif;
+  color: grey;
+}
+
+.sum-price {
+  font-family: "montserrat", serif;
+  font-size: 20px;
+  text-align: right;
+  color: #0a4a9b;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 30px;
+  font-family: "montserrat", serif;
+}
+.button {
+  float: right;
+  background: #0a4a9b;
+  color: white;
+  font-family: "montserrat", serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+}
