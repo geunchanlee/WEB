@@ -158,4 +158,72 @@ box-sizing: border-box; 로 설정 가능
 
 ### form & input
 
-<form> 태그 이용 </form>
+<form> 태그 이용 </form> 
+
+### nth-child() 셀렉터
+
+.table th:nth-child(2) {}
+
+.table 안의 th들 중 2번째 요소에 적용
+
+### pseudo-class
+
+상호작용 버튼, 인풋 등을 만들 수 있다.
+
+cart 에서의 예시 
+```css
+/*hover, focus, active 순으로 설정해야 제대로 작동한다.*/
+
+.button:hover {
+background: white;
+color: #0a4a9b;
+}
+/*focus = 커서 찍혀 있을 때 스타일 설정*/
+.button:focus {
+background: grey;
+}
+
+/*active = 버튼을 누르고 있을 때 상태 설정*/
+.button:active {
+background: #abc5d3;
+}
+
+.input-test {
+font-size: 16px;
+}
+
+.edit-link {
+text-decoration: none;
+}
+/*방문하기 전 링크 색상 스타일링*/
+.edit-link:link {
+color: #0a4a9b;
+}
+/*방문 후 링크 스타일*/
+.edit-link:visited {
+color: black;
+}
+
+```
+
+---
+
+### class 명 작성법 (OOCSS, BEM)
+
+**OOCSS(CSS 작성 관습)**
+
+> 뼈대용 클래스와 내용 클래스를 각각 제작하자. 
+
+뼈대용 클래스를 만들면 재사용이 가능하다.
+
+버튼을 빨강, 파랑으로 두개를 만들고 싶다면 버튼의 기본 형태를 만들고 다른 부분만 클래스로 만들면 됨
+
+코드의 양을 줄이고, 유지보수를 편하게 할 수 있다.
+
+**BEM(클래스명 작명)**
+
+> "작성할 class 가 위치하는 덩어리"__"그 안에서의 역할"--"세부특징"
+
+예시) profile__title, profile__img, profile__content, profile__button--red
+
+React, Vue 등으로 HTML 만들면 컴포넌트 단위로 파일이 나뉘어 코드를 짜기 때문에 잘 사용x

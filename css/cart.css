@@ -1,4 +1,4 @@
-table {
+.cart-table {
   border-collapse: collapse;
   background: white;
   width: 100%;
@@ -6,9 +6,10 @@ table {
   border: none;
   border-radius: 10px;
 }
-th,
-td {
-  padding: 8px;
+
+.cart-table td,
+.cart-table th {
+  padding: 10px;
 }
 
 body {
@@ -31,14 +32,13 @@ body {
 
 thead {
   font-family: "nunito", serif;
-  font-weight: bold;
   color: grey;
 }
 tr {
   border-bottom: 1px solid lightgray;
 }
 
-.pic {
+.cart-table th:nth-child(1) {
   width: 15%;
 }
 .item {
@@ -86,4 +86,37 @@ tr {
   border: none;
   border-radius: 5px;
   padding: 20px;
+  cursor: pointer;
+}
+
+/*hover, focus, active 순으로 설정해야 제대로 작동한다.*/
+
+.button:hover {
+  background: white;
+  color: #0a4a9b;
+}
+/*focus = 커서 찍혀 있을 때 스타일 설정*/
+.button:focus {
+  background: grey;
+}
+
+/*active = 버튼을 누르고 있을 때 상태 설정*/
+.button:active {
+  background: #abc5d3;
+}
+
+.input-test {
+  font-size: 16px;
+}
+
+.edit-link {
+  text-decoration: none;
+}
+/*방문하기 전 링크 색상 스타일링*/
+.edit-link:link {
+  color: #0a4a9b;
+}
+/*방문 후 링크 스타일*/
+.edit-link:visited {
+  color: black;
 }
