@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alert</title>
+    <link rel="stylesheet" href="css/alert.css" />
+  </head>
+  <body>
+    <div class="alert-box" id="alert">
+      alert-box<button onclick="quit()">닫기</button>
+    </div>
+    <button onclick="show()">Button</button>
+    <script>
+      function show() {
+        document.getElementById("alert").style.display = "block";
+      }
+      function quit() {
+        document.getElementById("alert").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
