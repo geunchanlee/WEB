@@ -1,7 +1,17 @@
 .alert-box {
-  background: skyblue;
+  background: #0a4a9b;
   padding: 20px;
   color: white;
   border-radius: 5px;
   display: none;
+}
+
+button {
+  background: #abc5d3;
+  color: #0a4a9b;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 10px;
 }

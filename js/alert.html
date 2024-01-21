@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="css/alert.css" />
   </head>
   <body>
+    <h2>JS study</h2>
     <div class="alert-box" id="alert">
-      alert-box<button onclick="quit()">닫기</button>
+      <p id="message">alert!</p>
+      <button id="close">close</button>
     </div>
-    <button onclick="show()">Button</button>
+
+    <button onclick="alert('block','enter ID')">Button1</button>
+    <button onclick="alert('block','enter PW')">Button2</button>
+
     <script>
-      function show() {
-        document.getElementById("alert").style.display = "block";
+      function alert(dis, text) {
+        document.getElementById("alert").style.display = dis;
+        document.getElementById("message").innerHTML = text;
       }
-      function quit() {
-        document.getElementById("alert").style.display = "none";
-      }
+
+      // 이벤트 리스너 사용해 알림창 닫기
+      document
+        .getElementById("close")
+        .addEventListener("mouseover", function () {
+          document.getElementById("alert").style.display = "none";
+        });
     </script>
   </body>
 </html>
