@@ -11,6 +11,8 @@
       crossorigin="anonymous"
     />
     <link href="css/main.css" rel="stylesheet" />
+
+    <!-- jQuery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -18,7 +20,7 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-  <body>
+  <body class="">
     <!--  모달창 -->
     <div class="black-bg">
       <div class="white-bg">
@@ -36,7 +38,7 @@
         </form>
       </div>
     </div>
-
+    <!-- 모달창 동작 -->
     <script>
       document.getElementById("form-id").addEventListener("input", function () {
         console.log("hello");
@@ -57,14 +59,33 @@
       });
     </script>
 
+    <!-- navbar -->
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
         <span class="navbar-brand">Navbar</span>
+        <span class="badge bg-dark">Dark 🔄</span>
         <button class="navbar-toggler" type="button">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
     </nav>
+
+    <!--   다크모드 버튼 설정 -->
+    <script>
+      let dark = 0;
+      document
+        .getElementsByClassName("badge")[0]
+        .addEventListener("click", function () {
+          document.querySelector("body").classList.toggle("dark");
+          if (dark == 0) {
+            dark++;
+            document.querySelector(".badge").innerHTML = "Light 🔄";
+          } else {
+            dark--;
+            document.querySelector(".badge").innerHTML = "Dark 🔄";
+          }
+        });
+    </script>
 
     <ul class="list-group" id="list-btn">
       <li class="list-group-item">An item</li>

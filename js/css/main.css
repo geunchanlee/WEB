@@ -41,5 +41,13 @@
 
 .main-bg {
   padding: 100px 20px;
-  background: lightblue;
+  border: black solid 1px;
+}
+
+.dark {
+  background: black;
+  color: white;
+}
+.dark > .main-bg {
+  border: white solid 1px;
 }
