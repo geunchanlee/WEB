@@ -38,6 +38,10 @@
     </div>
 
     <script>
+      document.getElementById("form-id").addEventListener("input", function () {
+        console.log("hello");
+      });
+
       document.getElementById("send").addEventListener("click", function (e) {
         if (document.getElementById("form-id").value == "") {
           alert("please enter id");

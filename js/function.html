@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>function</title>
+  </head>
+  <body>
+    <div style="border-bottom: black dashed 2px; max-width: 400px">
+      <p>function test [369게임]</p>
+      <input type="text" id="number" />
+      <button type="button" id="go">run !</button>
+      <p id="result">test1</p>
+    </div>
+    <div>
+      <p>function test [합격?]</p>
+      <input type="text" id="number2" />
+      <input type="text" id="number3" />
+
+      <button type="button" id="go2">run !!</button>
+      <p id="result2">test2</p>
+    </div>
+
+    <script>
+      function numGame(num) {
+        num = Number(num);
+        if (num % 9 == 0) {
+          document.getElementById("result").innerHTML = "박수박수";
+        } else if (num % 3 == 0) {
+          document.getElementById("result").innerHTML = "박수";
+        } else {
+          document.getElementById("result").innerHTML = "통과";
+        }
+      }
+
+      document.querySelector("#go").addEventListener("click", function () {
+        let k = document.getElementById("number").value;
+        numGame(k);
+      });
+
+      function isPass(i, j) {
+        i = Number(i);
+        j = Number(j);
+        if (i < 0 || i > 100 || j < 0 || j > 100) {
+          alert("유효한 점수를 입력하세요");
+        } else if (i < 40 || j < 40) {
+          document.getElementById("result2").innerHTML = "불합격";
+        } else if (i + j < 120) {
+          document.getElementById("result2").innerHTML = "불합격";
+        } else {
+          document.getElementById("result2").innerHTML = "합격";
+        }
+      }
+      document.querySelector("#go2").addEventListener("click", function () {
+        let i = document.getElementById("number2").value;
+        let j = document.getElementById("number3").value;
+        isPass(i, j);
+      });
+    </script>
+  </body>
+</html>
